@@ -19,6 +19,8 @@ public class RandomGenerator {
     }
 
     public RandomElement getRandomElement() {
+
+
         int randomChance = new Random().nextInt(100) + 1;
 
         RandomElement randomElement = null;;
@@ -37,11 +39,10 @@ public class RandomGenerator {
                 randomElement = currentElement;
             }
         }
-        return null;
-
+        return randomElement;
     }
 
-
-
-
+    public ArrayList<RandomElement> getRandomElements() {
+        return randomElements;
+    }
 }
